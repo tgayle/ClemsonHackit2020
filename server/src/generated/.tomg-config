@@ -1,0 +1,31 @@
+[
+  {
+    "resultsPath": "/home/travis/AndroidStudioProjects/CUHackit2020_2/server/src/generated/output",
+    "pluralizeNames": true,
+    "noConfigs": false,
+    "convertCaseFile": "pascal",
+    "convertCaseEntity": "pascal",
+    "convertCaseProperty": "camel",
+    "propertyVisibility": "none",
+    "lazy": false,
+    "activeRecord": false,
+    "generateConstructor": false,
+    "customNamingStrategyPath": "",
+    "relationIds": false,
+    "strictMode": "none",
+    "skipSchema": false,
+    "indexFile": false,
+    "exportType": "named"
+  },
+  {
+    "host": "db-clemson-2020.ccmpzooyzefm.us-east-2.rds.amazonaws.com",
+    "port": 3306,
+    "databaseName": "innodb",
+    "user": "Clemson2020",
+    "password": "123Rty8900",
+    "databaseType": "mysql",
+    "schemaName": "",
+    "ssl": false,
+    "skipTables": []
+  }
+]

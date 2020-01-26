@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recentIssues">
+    <fragment
+        android:id="@+id/recentIssues"
+        android:name="com.tno.cuhackit2020.recent.RecentIssuesFragment"
+        android:label="Local Issues"
+        tools:layout="@layout/recent_issues_fragment">
+        <action
+            android:id="@+id/action_recentIssues_to_viewContent"
+            app:destination="@id/viewContent" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewContent"
+        android:name="com.tno.cuhackit2020.ViewContentFragment"
+        android:label="fragment_view_content"
+        tools:layout="@layout/fragment_view_content">
+        <argument
+            android:name="isIssue"
+            app:argType="boolean" />
+        <argument
+            android:name="itemId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

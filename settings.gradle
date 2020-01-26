@@ -1,0 +1,2 @@
+rootProject.name='CUHackit2020'
+include ':app'

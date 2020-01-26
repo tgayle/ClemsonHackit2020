@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@id/neutral"
+        motion:constraintSetEnd="@id/liked"
+        motion:duration="300"
+        android:id="@+id/neutralToLiked" />
+
+    <ConstraintSet
+        android:id="@+id/liked"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent">
+
+        <Constraint
+            android:id="@id/fakeLikeBtn">
+
+            <CustomAttribute
+                motion:attributeName="cardBackgroundColor"
+                motion:customColorValue="@color/positive" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/neutral"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent">
+        <Constraint android:id="@id/fakeLikeBtn">
+
+            <CustomAttribute
+                motion:attributeName="cardBackgroundColor"
+                motion:customColorValue="@color/black" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/disliked"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent">
+        <Constraint
+            android:id="@id/fakeLikeBtn">
+
+            <CustomAttribute
+                motion:attributeName="cardBackgroundColor"
+                motion:customColorValue="@color/negative" />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>
